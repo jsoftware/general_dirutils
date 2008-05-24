@@ -1,0 +1,39 @@
+NB. project file: c:/users/rsherloc/documents/j602-user/jsrc/addons/general/dirutils/dirutils
+
+coclass 'jproject'
+
+PRIMARYFILES=: '~Addons/general/dirutils/dirutils_src'
+
+PRIMARYLIBS=: 'files'
+
+DEVFILES=: ''
+
+DEVLIBS=: ''
+
+OTHERFILES=: 0 : 0
+~Addons/general/dirutils/manifest.ijs
+~Addons/general/dirutils/test.ijs
+~Addons/general/dirutils/history.txt
+)
+
+TARGETFILE=: '~Addons/general/dirutils/dirutils.ijs'
+
+TARGETLOCALE=: 'rgsdiradd'
+
+TARGETHEADER=: ''
+
+TARGETEXTRA=: ''
+
+BUILDOPTS=: 0 1 0 0 0 0 0
+
+PREBUILDFILE=: ''
+
+POSTBUILDFILE=: ''
+
+TESTFILE=: '~Addons/general/dirutils/test_src.ijs'
+
+NOTES=: ''
+
+VERSION=: ''
+
+WINDOWS=: ''
