@@ -1,7 +1,7 @@
 NB. built from project: ~user/jsrc/addons/general/dirutils/dirutils
 NB. Verbs for extending the dir.ijs system library
 
-script_z_ '~system/main/files.ijs'
+script_z_ '~system/main/dir.ijs'
 
 coclass 'rgsdiradd'
 

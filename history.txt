@@ -1,4 +1,7 @@
 general/dirutils - change history
 
+== 1.0.1 ==
+ * load dir.ijs
+
 == 1.0.0 ==
  * publish in JAL
