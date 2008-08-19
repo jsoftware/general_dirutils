@@ -1,4 +1,4 @@
-NB. project file: c:/users/rsherloc/documents/j602-user/jsrc/addons/general/dirutils/dirutils
+NB. project file: ~Addons/general/dirutils/dirutils
 
 coclass 'jproject'
 
@@ -11,9 +11,9 @@ DEVFILES=: ''
 DEVLIBS=: ''
 
 OTHERFILES=: 0 : 0
-~Addons/general/dirutils/manifest.ijs
-~Addons/general/dirutils/test.ijs
 ~Addons/general/dirutils/history.txt
+~Addons/general/dirutils/manifest.ijs
+~Addons/general/dirutils/test_dirutils.ijs
 )
 
 TARGETFILE=: '~Addons/general/dirutils/dirutils.ijs'

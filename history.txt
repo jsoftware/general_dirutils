@@ -1,5 +1,8 @@
 general/dirutils - change history
 
+== 1.0.2 ==
+ * chg: standardize testing methodology
+
 == 1.0.1 ==
  * load dir.ijs
 

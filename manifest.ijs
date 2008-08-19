@@ -21,5 +21,5 @@ FILES=: 0 : 0
 history.txt
 manifest.ijs
 dirutils.ijs
-test.ijs
+test_dirutils.ijs
 )
