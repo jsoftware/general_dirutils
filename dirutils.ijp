@@ -2,7 +2,7 @@ NB. project file: ~Addons/general/dirutils/dirutils
 
 coclass 'jproject'
 
-PRIMARYFILES=: '~Addons/general/dirutils/dirutils_src'
+PRIMARYFILES=: '~Addons/general/dirutils/dirutils'
 
 PRIMARYLIBS=: 'dir'
 
@@ -13,12 +13,12 @@ DEVLIBS=: ''
 OTHERFILES=: 0 : 0
 ~Addons/general/dirutils/history.txt
 ~Addons/general/dirutils/manifest.ijs
-~Addons/general/dirutils/test_dirutils.ijs
+~Addons/general/dirutils/test/test_dirutils.ijs
 )
 
-TARGETFILE=: '~Addons/general/dirutils/dirutils.ijs'
+TARGETFILE=: ''
 
-TARGETLOCALE=: 'rgsdiradd'
+TARGETLOCALE=: ''
 
 TARGETHEADER=: ''
 
@@ -30,7 +30,7 @@ PREBUILDFILE=: ''
 
 POSTBUILDFILE=: ''
 
-TESTFILE=: '~Addons/general/dirutils/test_src.ijs'
+TESTFILE=: '~Addons/general/dirutils/test/test_src.ijs'
 
 NOTES=: ''
 

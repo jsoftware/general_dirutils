@@ -1,10 +1,8 @@
-NB. built from project: ~Addons/general/dirutils/dirutils
 NB. Verbs for extending the dir.ijs system library
 
-script_z_ '~system/main/dir.ijs'
+require 'dir'
 
-coclass 'rgsdiradd'
-
+coclass 'rgsdirutils'
 
 NB.*addPS v Ensures trailing path separator
 addPS=: , PATHSEP_j_ -. {:
@@ -53,10 +51,8 @@ pathcreate=: 3 : 0
 NB. =========================================================
 NB. Verbs to be created in z locale
 
-dircreate_z_=: dircreate_rgsdiradd_
-direxist_z_=: direxist_rgsdiradd_
-pathcreate_z_=: pathcreate_rgsdiradd_
-addPS_z_=: addPS_rgsdiradd_
-dropPS_z_=: dropPS_rgsdiradd_
-
-
+dircreate_z_=: dircreate_rgsdirutils_
+direxist_z_=: direxist_rgsdirutils_
+pathcreate_z_=: pathcreate_rgsdirutils_
+addPS_z_=: addPS_rgsdirutils_
+dropPS_z_=: dropPS_rgsdirutils_
