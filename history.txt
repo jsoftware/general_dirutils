@@ -1,6 +1,7 @@
 general/dirutils - change history
 
 == 1.0.2 ==
+ * fix: detect base folder of UNC share
  * chg: standardize testing methodology
 
 == 1.0.1 ==

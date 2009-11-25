@@ -1,3 +1,4 @@
+NB. general/dirutils
 NB. Verbs for extending the dir.ijs system library
 
 require 'dir'
@@ -26,11 +27,36 @@ dircreate=: 3 : 0
   msk expand ,res
 )
 
-NB.*direxist v checks directory(s) exists
+NB.*direxist v Checks directory(s) exists
 NB. form: direxist DirectoryPathnames
 NB. returns: boolean list of whether directory path exists
 NB. y is: literal or boxed list of directory pathname(s)
 direxist=: 2 = ftype&>@: boxopen
+
+NB. ftype v Returns file type of path y
+NB. returns: 0 = not exist or empty UNC share
+NB.          1 = file
+NB.          2 = directory/folder
+NB. This verb is an extended version of ftype from the files script
+NB. It contains a workaround to handle the fact that 1!:0 does not 
+NB. return a result for a bare UNC share 
+NB. i.e. 0 = # 1!:0 '\\server\share'
+ftype=: 3 : 0
+'ftype does not support wildcards' assert y -.@e. '?*'
+sep=. PATHSEP_j_
+d=. (}: ^: (sep={:)) ucp y
+if. *./ ((1 = sep +/@:= 2&}.) , sep = 2&{.) d do. NB. UNC share
+  d=. 1!:0 fboxname d,sep,'*'
+  (0 < #d) { 0 2                                  NB. non-empty?
+else.
+  d=. 1!:0 fboxname d
+  if. #d do.
+    >: 'd' = 4 { > 4 { ,d
+  else.
+    0
+  end.
+end.
+)
 
 NB.*pathcreate v Create non-existing directories in a path
 NB. form: pathcreate DirectoryPathname
