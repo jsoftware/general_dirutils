@@ -13,7 +13,7 @@ LABCATEGORY=: 'General'
 
 VERSION=: '1.0.2'
 
-RELEASE=: 'j602'
+RELEASE=: 'j602 j701'
 
 PLATFORMS=: 'win linux darwin'
 
