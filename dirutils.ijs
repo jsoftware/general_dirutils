@@ -1,5 +1,5 @@
 NB. general/dirutils
-NB. Verbs for extending the dir.ijs system library
+NB. Extension of the dir.ijs system library
 
 require 'dir'
 
