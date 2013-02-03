@@ -1,5 +1,8 @@
 general/dirutils - change history
 
+== 1.0.5 ==
+ * chg: j801 support
+
 == 1.0.2/3 ==
  * chg: j701 support
  * chg: addPS and dropPS renamed termsep and remsep, not defined in z locale
