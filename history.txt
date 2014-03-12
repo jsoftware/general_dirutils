@@ -1,6 +1,6 @@
 general/dirutils - change history
 
-== 1.0.5 ==
+== 1.0.5/6 ==
  * chg: j801 support
 
 == 1.0.2/3 ==

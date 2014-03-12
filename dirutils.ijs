@@ -6,7 +6,7 @@ require 'dir'
 coclass 'rgsdirutils'
 
 3 :0''  NB. hack to maintain J6 compatibility
-if. IFJ6
+if. 0=4!:0<'PATHSEP_j_'
  do.   SEP=: PATHSEP_j_   NB. J6
  else. SEP=: '/'          NB. J7
 end.
