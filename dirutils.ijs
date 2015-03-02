@@ -45,12 +45,12 @@ NB. returns: 0 = not exist or empty UNC share
 NB.          1 = file
 NB.          2 = directory/folder
 NB. This verb is an extended version of ftype from the files script
-NB. It contains a workaround to handle the fact that 1!:0 does not 
-NB. return a result for a bare UNC share 
+NB. It contains a workaround to handle the fact that 1!:0 does not
+NB. return a result for a bare UNC share
 NB. i.e. 0 = # 1!:0 '\\server\share'
 ftype=: 3 : 0
 'ftype does not support wildcards' assert y -.@e. '?*'
-d=. (}: ^: (SEP={:)) ucp y
+d=. (}: ^: ('/\' e.~ {:)) ucp y
 if. *./ ((1 = SEP +/@:= 2&}.) , SEP = 2&{.) d do. NB. UNC share
   d=. 1!:0 fboxname d,SEP,'*'
   (0 < #d) { 0 2                                  NB. non-empty?
