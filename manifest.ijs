@@ -11,9 +11,9 @@ Contributed by Ric Sherlock
 
 LABCATEGORY=: 'General'
 
-VERSION=: '1.0.11'
+VERSION=: '1.0.12'
 
-RELEASE=: 'j602 j701 j801 j802 j803 j804'
+RELEASE=: 'j602 j701 j801 j802 j803 j804 j805'
 
 PLATFORMS=: ''
 
